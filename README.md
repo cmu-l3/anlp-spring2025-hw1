@@ -67,7 +67,7 @@ Mean reference accuracies over 10 random seeds with their standard deviation sho
 
 **Code:**
 You will submit a full code package, with output files, on **Canvas**. This package will be checked by the TAs in the 1-2 weeks 
-   after the assignment for its correctness and executability.
+   after the assignment for its correctness and executability. **Your submission file should strictly be within 10MB**, any model weights (if needed for advanced implementation) need to be hosted on your own drive with link shared in the report. Files not adhering to the limit will be graded down by a third of grade.
 
 **Report (optional):** Your zip file can include a pdf file, named ANDREWID-report.pdf, if (1) you've implemented something else on top of the requirements and further improved accuracy for possible extra points (see "Grading" below), and/or (2) if your best results are with some hyperparameters other than the default, and you want to specify how we should run your code. If you're doing (1), we expect your report should be 1-2 pages, but no more than 3 pages. If you're doing (2), the report can be very brief.
 
@@ -127,7 +127,7 @@ students lose a 1/3 letter grade because of an improper submission format.
 
 
 ### Grading
-* A+: (Advanced implementation) You additionally implement something else on top of the requirements for A, and achieve significant accuracy improvements or demonstrate exceptional creativity. This improvement can be in either the zero-shot setting (no task-specific finetuning required) or in the finetuning setting (improving over our current finetuning implementation). Please write down the things you implemented and experiments you performed in the report. You are also welcome to provide additional materials such as commands to run your code in a script and training logs.
+* A+: (Advanced implementation) You additionally implement something else on top of the requirements for A, and achieve significant accuracy improvements or demonstrate exceptional creativity. This improvement can be in either the zero-shot setting (no task-specific finetuning required) or in the finetuning setting (improving over our current finetuning implementation). Make sure that your implementation must still be executable using the specified commands. Please write down the things you implemented and experiments you performed in the report along with clear instructions for how to run them. **You will not be eligible for an A+ without the report**. You are also welcome to provide additional materials such as commands to run your code in a script and training logs.
     * perform [continued pre-training](https://arxiv.org/abs/2004.10964) using the language modeling objective to do domain adaptation
     * enable zero-shot prompting using a more principled inference algorithm than our current implementation. For example, we did not include an attention mask despite right-padding all inputs (to enable batch prediction); this could be improved.
     * perform [prompt-based finetuning](https://arxiv.org/abs/2109.01247)
